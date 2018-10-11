@@ -9,7 +9,7 @@
 
 using namespace std;
 
-int l_iLives = 5;
+int l_iLives = 8;
 bool l_bWin = false;
 
 void Game::GameLoop()
@@ -18,7 +18,7 @@ void Game::GameLoop()
 	while (l_iLives > 0 && !l_bWin) //Test
 	{
 		int l_iGuess = -1;
-		int l_iRandom = rand() % 100 + 1;
+		int l_iRandom = rand() % 1000 + 1;
 		cout << "Please enter a number between 1 and 100";
 		cin >> l_iGuess;
 		if (l_iGuess == l_iRandom)
