@@ -15,7 +15,7 @@ bool l_bWin = false;
 void Game::GameLoop()
 {
 	srand(time(NULL));
-	while (l_iLives > 0 && !l_bWin)
+	while (l_iLives > 0 && !l_bWin) //Test
 	{
 		int l_iGuess = -1;
 		int l_iRandom = rand() % 100 + 1;
